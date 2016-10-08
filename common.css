@@ -1,0 +1,10 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+.nav li {
+	width: 300px;
+}
+.nav li a {
+	padding-left: 90px;
+}
