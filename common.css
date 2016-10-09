@@ -2,6 +2,11 @@ body {
 	margin: 0;
 	padding: 0;
 }
+.nav {
+	display: inline-block;
+	vertical-align: top;
+	width: 400px;
+}
 .nav li {
 	width: 300px;
 }

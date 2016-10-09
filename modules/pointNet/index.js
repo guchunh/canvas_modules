@@ -3,7 +3,7 @@ var wh = window.innerHeight;
 
 var fps = 60;
 var pointNum = 100; //点的个数
-var maxLine = 100; //允许连接的最大的间距
+var maxLine = 150; //允许连接的最大的间距
 var cs = [];
 var c, ct;
 
@@ -89,3 +89,23 @@ function randomNum(min, max) {
 
 	return Math.random() * (max - min) + min;
 }
+
+// // 点击事件
+// document.getElementById("canvast").addEventListener("click", function(event) {
+// 	var e = event || window.event;
+
+// 	for(var i=0; i<pointNum; i++) {
+// 		var xd = e.clientX - cs[i].x;
+// 		var yd = e.clientY - cs[i].y;
+// 		var sin = yd/Math.sqrt(Math.pow(xd, 2)+Math.pow(yd, 2));
+// 		var asin = Math.asin(sin);
+
+// 		if(xd < 0) {
+// 			asin = Math.PI - asin;
+// 		}
+// 		if(xd > 0 && yd <0) {
+// 			asin = 2*Math.PI + asin;
+// 		}
+// 		cs[i].direction = asin;
+// 	}
+// })
