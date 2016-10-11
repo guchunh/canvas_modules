@@ -4,28 +4,44 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 	<title>drag-drop</title>
+	<link href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="./style.css">
 </head>
 <body>
-	<div class="body-wrapper" ondrop="drop(event, 0)" ondragover="allowDrop(event)">
-		<div class="img-wrapper">
-			<div class="img-slice" ondrop="drop(event, 1)" ondragover="allowDrop(event)">
-				<img src="./img/1.png" draggable="true" ondragstart="drag(event)" alt="" id="img1"/>
+	<div class="main">
+		<div class="element-wrapper">
+			<div class="input-group m-b" id="ip@" draggable="true" ondragstart="drag(event)">
+				<span class="input-group-addon">@</span>
+				<input type="text" class="form-control" placeholder="Username">
 			</div>
-			<div class="img-slice" ondrop="drop(event, 1)" ondragover="allowDrop(event)">
-				<img src="./img/2.png" draggable="true" ondragstart="drag(event)" alt="" id="img2"/>
+			<div class="input-group m-b" id="ip$" draggable="true" ondragstart="drag(event)">
+				<span class="input-group-addon">$</span>
+				<input type="text" class="form-control">
+				<span class="input-group-addon">.00</span>
 			</div>
-			<div class="img-slice" ondrop="drop(event, 1)" ondragover="allowDrop(event)">
-				<img src="./img/3.png" draggable="true" ondragstart="drag(event)" alt="" id="img3"/>
+			<div class="input-group m-b" id="ipT" draggable="true" ondragstart="drag(event)">
+				<span class="input-group-addon">T</span>
+				<input type="text" class="form-control" placeholder="Telphone">
 			</div>
-			<div class="img-slice" ondrop="drop(event, 1)" ondragover="allowDrop(event)">
-				<!-- <img src="./img/4.png" draggable="true" ondragstart="drag(event)" alt="" id="img4"/> -->
+			<div class="input-group m-b" id="ipA" draggable="true" ondragstart="drag(event)">
+				<span class="input-group-addon">A</span>
+				<input type="text" class="form-control" placeholder="Adress">
 			</div>
-
-			<!-- <img id="test" src="./img/1.png" draggable="true" ondragstart="drag(event)" alt=""/> -->
+			<div class="input-group m-b" id="ipU" draggable="true" ondragstart="drag(event)">
+				<span class="input-group-addon">U</span>
+				<input type="text" class="form-control">
+				<span class="input-group-addon">UN</span>
+			</div>
+		</div>
+		<div class="ct-wrapper">
+			<div class="form-wrapper" ondrop="drop(event)" ondragover="allowDrop(event)">
+				
+			</div>
 		</div>
 	</div>
 	
+	<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<script src="./index.js"></script>
 </body>
 </html>

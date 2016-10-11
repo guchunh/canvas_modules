@@ -5,14 +5,13 @@
 
 	// 获取被拖动的元素
 	function drag(e) {
-		e.dataTransfer.setData('mark', e.target.id);
+		e.dataTransfer.setData('itId', e.target.id);
 	}
 
 	// 放置元素
-	function drop(e, status) {
+	function drop(e) {
 		e.preventDefault();
-		if((status == 1 && !e.target.children) || status == 0 )  {
-			var data = e.dataTransfer.getData("mark");
-			e.target.appendChild(document.getElementById(data));
-		}
+		e.stopPropagation();
+		var data = e.dataTransfer.getData("itId");
+		e.target.appendChild(document.getElementById(data));
 	}
