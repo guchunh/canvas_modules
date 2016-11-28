@@ -3,7 +3,7 @@ var wh = window.innerHeight;
 
 var fps = 60;
 var pointNum = 100; //点的个数
-var maxLine = 150; //允许连接的最大的间距
+var maxLine = 120; //允许连接的最大的间距
 var cs = [];
 var c, ct;
 
