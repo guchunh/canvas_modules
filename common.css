@@ -1,15 +1,15 @@
 body {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 .nav {
-	display: inline-block;
-	vertical-align: top;
-	width: 400px;
+    display: inline-block;
+    vertical-align: top;
+    width: 400px;
 }
 .nav li {
-	width: 300px;
+    width: 300px;
 }
 .nav li a {
-	padding-left: 90px;
+    padding-left: 90px;
 }

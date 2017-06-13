@@ -1,47 +1,47 @@
 <!DOCTYPE html>
 <html lang="zh_CN">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-	<title>drag-drop</title>
-	<link href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>drag-drop</title>
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-	<div class="main">
-		<div class="element-wrapper">
-			<div class="input-group m-b" id="ip@" draggable="true" ondragstart="drag(event)">
-				<span class="input-group-addon">@</span>
-				<input type="text" class="form-control" placeholder="Username">
-			</div>
-			<div class="input-group m-b" id="ip$" draggable="true" ondragstart="drag(event)">
-				<span class="input-group-addon">$</span>
-				<input type="text" class="form-control">
-				<span class="input-group-addon">.00</span>
-			</div>
-			<div class="input-group m-b" id="ipT" draggable="true" ondragstart="drag(event)">
-				<span class="input-group-addon">T</span>
-				<input type="text" class="form-control" placeholder="Telphone">
-			</div>
-			<div class="input-group m-b" id="ipA" draggable="true" ondragstart="drag(event)">
-				<span class="input-group-addon">A</span>
-				<input type="text" class="form-control" placeholder="Adress">
-			</div>
-			<div class="input-group m-b" id="ipU" draggable="true" ondragstart="drag(event)">
-				<span class="input-group-addon">U</span>
-				<input type="text" class="form-control">
-				<span class="input-group-addon">UN</span>
-			</div>
-		</div>
-		<div class="ct-wrapper">
-			<div class="form-wrapper" ondrop="drop(event)" ondragover="allowDrop(event)">
-				
-			</div>
-		</div>
-	</div>
-	
-	<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
-	<script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-	<script src="./index.js"></script>
+    <div class="main">
+        <div class="element-wrapper">
+            <div class="input-group m-b" id="ip@" draggable="true" ondragstart="drag(event)">
+                <span class="input-group-addon">@</span>
+                <input type="text" class="form-control" placeholder="Username">
+            </div>
+            <div class="input-group m-b" id="ip$" draggable="true" ondragstart="drag(event)">
+                <span class="input-group-addon">$</span>
+                <input type="text" class="form-control">
+                <span class="input-group-addon">.00</span>
+            </div>
+            <div class="input-group m-b" id="ipT" draggable="true" ondragstart="drag(event)">
+                <span class="input-group-addon">T</span>
+                <input type="text" class="form-control" placeholder="Telphone">
+            </div>
+            <div class="input-group m-b" id="ipA" draggable="true" ondragstart="drag(event)">
+                <span class="input-group-addon">A</span>
+                <input type="text" class="form-control" placeholder="Adress">
+            </div>
+            <div class="input-group m-b" id="ipU" draggable="true" ondragstart="drag(event)">
+                <span class="input-group-addon">U</span>
+                <input type="text" class="form-control">
+                <span class="input-group-addon">UN</span>
+            </div>
+        </div>
+        <div class="ct-wrapper">
+            <div class="form-wrapper" ondrop="drop(event)" ondragover="allowDrop(event)">
+                
+            </div>
+        </div>
+    </div>
+    
+    <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
