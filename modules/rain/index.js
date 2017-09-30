@@ -2,7 +2,7 @@ var ww = window.innerWidth;
 var wh = window.innerHeight;
 
 var fps = 60;
-var pointNum = 20;
+var pointNum = 500;
 var cs = [];
 var c, ct;
 
@@ -27,10 +27,11 @@ function initState() {
     for(var i=0; i<pointNum; i++) {
         cs[i] = {
             x: Math.floor(ww * Math.random()),
-            y: 0,
-            speed: randomNum(2.5, 4),
+            y: Math.floor(wh * Math.random()),
+            speed: randomNum(3, 5),
             height: wh - randomNum(30, 60),
-            color: 'rgba(0, 255, 255, 1)',
+            // color: 'rgba(0, 255, 255, 1)',
+            color: 'rgba(39, 222, 229, 1)',
             r: 0
         }
     }
@@ -42,12 +43,13 @@ function updateState(i) {
         return ;
     }
     var cy = cs[i].y + cs[i].speed;
+    var cx = cs[i].x - cs[i].speed/20;
 
     if(cy > cs[i].height) {
         cs[i].r ++;
         ct.beginPath();
         ct.lineWidth = 1;
-        ct.strokeStyle = 'rgba(0, 255, 255, 0.8)';
+        ct.strokeStyle = 'rgba(39, 222, 229, 0.8)';
         // ct.arc(cs[i].x, cs[i].y, cs[i].r/2, 0, Math.PI*2, true);
         ct.moveTo(cs[i].x, cs[i].y - cs[i].r / 6);
         ct.bezierCurveTo(
@@ -70,13 +72,14 @@ function updateState(i) {
         }
     } else {
         cs[i].y = cy;
+        cs[i].x = cx;
     }
 }
 
 // 绘制canvas
 function loop() {
 
-    ct.fillStyle = 'rgba(0, 0, 0, .12)';
+    ct.fillStyle = 'rgba(0, 0, 0, .3)';
     ct.fillRect(0, 0, c.width, c.height);
 
     for(var n=0; n<pointNum; n++) {
